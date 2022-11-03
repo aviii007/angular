@@ -6,8 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-world from Bridgelabz';
+  title = 'helloworld';
+  imgUrl="../assets/download.jpg";
+  url = "https://www.bridgelabz.com";
+
   ngOnInit():void { 
-    this.title = "Hello Folks"
+    this.title = "Hello from Bridgelabz";
 }
+
+onClick($event: any){
+  console.log("Save button is clicked!", $event);
+  window.open(this.url, "_blank");
+}
+
 }
