@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'helloworld';
   imgUrl="../assets/download.jpg";
   url = "https://www.bridgelabz.com";
+  userName: string = "";
 
   ngOnInit():void { 
     this.title = "Hello from Bridgelabz";
